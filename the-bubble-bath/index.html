@@ -1,41 +1,91 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Bubble Bath — Bengaluru</title><meta name="robots" content="noindex">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Bubble Bath · Bengaluru</title><meta name="robots" content="noindex"><meta name="description" content="The Bubble Bath: Happy pets, happy humans. ★4.8 from 462 Google reviews.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1719464454959-9cf304ef4774?auto=format&fit=crop&w=1400&q=70">
 <style>
-:root{--bg:#F3F7FB;--ink:#152238;--muted:#5B6B82;--accent:#F07A2A;--accent2:#E3ECF6;--card:#FFFFFF;--display:'Fredoka', 'Nunito', system-ui, sans-serif;--body:'Nunito', system-ui, sans-serif}
-*{box-sizing:border-box;margin:0}html,body{overflow-x:hidden}body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body)}
-.preview{background:var(--ink);color:var(--bg);font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}nav b{font-family:var(--display);font-size:22px;letter-spacing:.01em}
-nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14px;border:1.5px solid var(--ink);padding:8px 16px;border-radius:999px}
-.hero{position:relative;padding:48px 0 56px;overflow:hidden}.motif{position:absolute;right:-60px;top:-10px;width:260px;height:260px;opacity:.35;z-index:0}
-.hero>*:not(.motif){position:relative;z-index:1}.pill{display:inline-flex;gap:8px;align-items:center;background:var(--accent2);color:var(--ink);padding:7px 14px;border-radius:999px;font-weight:600;font-size:14px}
-.pill span{color:var(--accent)}h1{font-family:var(--display);font-size:clamp(44px,11vw,88px);line-height:1;margin:22px 0 14px;max-width:12ch;letter-spacing:-.01em}
-.tag{font-size:20px;font-weight:600;color:var(--accent);margin-bottom:10px}.blurb{color:var(--muted);max-width:46ch;font-size:17px}
-.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:12px;font-weight:700;text-decoration:none;font-size:16px}
-.btn.p{background:var(--accent);color:#fff}.btn.s{border:1.5px solid var(--ink);color:var(--ink)}
-section{padding:44px 0}h2{font-family:var(--display);font-size:clamp(30px,6vw,44px);line-height:1.1;margin-bottom:22px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.svc{background:var(--card);border:1px solid color-mix(in srgb,var(--ink) 10%,transparent);border-radius:16px;padding:22px}.svc h3{font-size:18px;margin-bottom:4px}.svc p{color:var(--muted);font-size:15px}
-.revs{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.rev{background:var(--card);border-radius:16px;padding:22px;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
-.stars{color:#F5A623;letter-spacing:2px;margin-bottom:8px}blockquote{font-size:16px}figcaption{color:var(--muted);font-size:14px;margin-top:10px}
-.two{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}.box{background:var(--card);border-radius:16px;padding:24px;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
-table{width:100%;border-collapse:collapse}td{padding:9px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}td:last-child{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
-.big{font-family:var(--display);font-size:64px;line-height:1;color:var(--accent)}
-footer{padding:36px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
-.float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;font-weight:700;padding:14px 20px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+:root{--bg:#F3F7FB;--ink:#152238;--muted:#5B6B82;--accent:#F07A2A;--soft:#E3ECF6;--card:#FFFFFF;--on:#FFFFFF;--display:'Fredoka', 'Nunito', system-ui, sans-serif;--body:'Nunito', system-ui, sans-serif}
+*{box-sizing:border-box;margin:0}html,body{overflow-x:hidden}body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}img{display:block;max-width:100%}
+.bar{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;color:#fff;transition:background .3s,color .3s}
+.bar.solid{background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);color:var(--ink);box-shadow:0 1px 0 color-mix(in srgb,var(--ink) 10%,transparent)}
+.bar b{font-family:var(--display);font-size:20px;letter-spacing:.01em}.bar a{font-weight:700;font-size:14px;text-decoration:none;border:1.5px solid currentColor;padding:7px 15px;border-radius:999px}
+.hero{position:relative;min-height:min(92svh,860px);display:flex;align-items:flex-end;color:#fff;background:#111 url('https://images.unsplash.com/photo-1719464454959-9cf304ef4774?auto=format&fit=crop&w=1400&q=70') center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.15) 35%,rgba(0,0,0,.78) 100%)}
+.hero .in{position:relative;padding:0 22px 64px;max-width:1080px;margin:0 auto;width:100%;animation:up .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.chip{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;background:#22C55E;box-shadow:0 0 0 4px rgba(34,197,94,.25)}.dot.off{background:#F87171;box-shadow:0 0 0 4px rgba(248,113,113,.25)}
+.hero h1{font-family:var(--display);font-size:clamp(46px,13vw,104px);line-height:.95;letter-spacing:-.015em;max-width:11ch;text-wrap:balance}
+.hero .tag{font-size:clamp(18px,4.6vw,24px);margin:14px 0 26px;opacity:.92;max-width:28ch}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:16px 24px;border-radius:14px;font-weight:700;text-decoration:none;font-size:16px}
+.btn.p{background:var(--accent);color:var(--on)}.btn.g{background:rgba(255,255,255,.14);color:#fff;border:1.5px solid rgba(255,255,255,.45);backdrop-filter:blur(6px)}
+.btn svg{width:20px;height:20px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);background:var(--card);max-width:1040px;margin:-34px auto 0;position:relative;border-radius:20px;box-shadow:0 18px 50px rgba(0,0,0,.14);z-index:2;width:calc(100% - 32px)}
+.stats div{padding:18px 8px;text-align:center}.stats div+div{border-left:1px solid color-mix(in srgb,var(--ink) 9%,transparent)}
+.stats b{display:block;font-family:var(--display);font-size:clamp(26px,7vw,40px);line-height:1.05;color:var(--accent);font-variant-numeric:tabular-nums}.stats span{font-size:12.5px;color:var(--muted);font-weight:600;letter-spacing:.02em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}section{padding:64px 0 8px}
+.eyebrow{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--accent);margin-bottom:10px}
+h2{font-family:var(--display);font-size:clamp(32px,8vw,52px);line-height:1.05;letter-spacing:-.01em;margin-bottom:26px;max-width:16ch}
+.lead{color:var(--muted);font-size:18px;max-width:52ch;margin:-12px 0 26px}
+.svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.svc{background:var(--card);border-radius:20px;padding:24px;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);position:relative;overflow:hidden}
+.svc .n{font-family:var(--display);font-size:15px;color:var(--accent);font-weight:700}.svc h3{font-size:20px;margin:8px 0 4px;line-height:1.2}.svc p{color:var(--muted);font-size:15px}
+.svc::after{content:"";position:absolute;right:-30px;top:-30px;width:90px;height:90px;border-radius:50%;background:var(--soft)}
+.gal{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:1fr 1fr;gap:10px;height:clamp(360px,90vw,560px)}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:18px}.gal img:first-child{grid-row:span 2}
+.note{font-size:12.5px;color:var(--muted);margin-top:10px}
+.revs{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;margin:0 -22px;padding-left:22px;padding-right:22px;scrollbar-width:none}
+.rev{flex:0 0 min(86%,380px);scroll-snap-align:start;background:var(--card);border-radius:20px;padding:22px;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+.who{display:flex;gap:12px;align-items:center;margin-bottom:12px}.who small{display:block;color:#F5A623;font-size:12.5px}
+.av{width:42px;height:42px;border-radius:50%;background:var(--accent);color:var(--on);display:grid;place-items:center;font-weight:700;font-size:18px}
+blockquote{font-size:16px}
+.visit{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.box{background:var(--card);border-radius:20px;padding:24px;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+table{width:100%;border-collapse:collapse}td{padding:10px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 7%,transparent)}td:last-child{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+tr.today td{color:var(--accent);font-weight:800}
+.map{border:0;width:100%;height:260px;border-radius:14px;margin:14px 0}
+.final{margin:64px 0 0;background:var(--accent);color:var(--on);border-radius:28px;padding:44px 26px;text-align:center}
+.final h2{margin:0 auto 10px}.final .btn{background:var(--on);color:var(--accent)}
+footer{padding:34px 22px 120px;text-align:center;color:var(--muted);font-size:13.5px}
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:grid;grid-template-columns:1fr 1.4fr;gap:10px;padding-bottom:env(safe-area-inset-bottom)}
+.sticky a{padding:15px;border-radius:16px;text-align:center;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.sticky .c{background:var(--card);color:var(--ink)}.sticky .w{background:#25D366;color:#fff}
+.preview{position:fixed;top:0;left:0;right:0;z-index:50;background:#111;color:#fff;font-size:11.5px;text-align:center;padding:5px 10px;letter-spacing:.02em}
+.preview+.bar{top:26px}
+.reveal{opacity:1;transform:none;transition:opacity .7s,transform .7s}.js .reveal.pre{opacity:0;transform:translateY(24px)}
+@media (min-width:900px){.sticky{display:none}footer{padding-bottom:40px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head><body>
-<div class="preview">Website preview made for The Bubble Bath · not live yet</div>
-<div class="wrap">
-<nav><b>The Bubble Bath</b><a href="tel:+91 99725 00708">Call now</a></nav>
-<header class="hero"><svg viewBox="0 0 200 200" class="motif"><circle cx="25" cy="25" r="4" fill="#F07A2A" opacity=".5"/><circle cx="55" cy="25" r="11" fill="#F07A2A" opacity=".5"/><circle cx="85" cy="25" r="9" fill="#F07A2A" opacity=".5"/><circle cx="115" cy="25" r="7" fill="#F07A2A" opacity=".5"/><circle cx="145" cy="25" r="5" fill="#F07A2A" opacity=".5"/><circle cx="175" cy="25" r="12" fill="#F07A2A" opacity=".5"/><circle cx="25" cy="55" r="10" fill="#F07A2A" opacity=".5"/><circle cx="55" cy="55" r="8" fill="#F07A2A" opacity=".5"/><circle cx="85" cy="55" r="6" fill="#F07A2A" opacity=".5"/><circle cx="115" cy="55" r="4" fill="#F07A2A" opacity=".5"/><circle cx="145" cy="55" r="11" fill="#F07A2A" opacity=".5"/><circle cx="175" cy="55" r="9" fill="#F07A2A" opacity=".5"/><circle cx="25" cy="85" r="7" fill="#F07A2A" opacity=".5"/><circle cx="55" cy="85" r="5" fill="#F07A2A" opacity=".5"/><circle cx="85" cy="85" r="12" fill="#F07A2A" opacity=".5"/><circle cx="115" cy="85" r="10" fill="#F07A2A" opacity=".5"/><circle cx="145" cy="85" r="8" fill="#F07A2A" opacity=".5"/><circle cx="175" cy="85" r="6" fill="#F07A2A" opacity=".5"/><circle cx="25" cy="115" r="4" fill="#F07A2A" opacity=".5"/><circle cx="55" cy="115" r="11" fill="#F07A2A" opacity=".5"/><circle cx="85" cy="115" r="9" fill="#F07A2A" opacity=".5"/><circle cx="115" cy="115" r="7" fill="#F07A2A" opacity=".5"/><circle cx="145" cy="115" r="5" fill="#F07A2A" opacity=".5"/><circle cx="175" cy="115" r="12" fill="#F07A2A" opacity=".5"/><circle cx="25" cy="145" r="10" fill="#F07A2A" opacity=".5"/><circle cx="55" cy="145" r="8" fill="#F07A2A" opacity=".5"/><circle cx="85" cy="145" r="6" fill="#F07A2A" opacity=".5"/><circle cx="115" cy="145" r="4" fill="#F07A2A" opacity=".5"/><circle cx="145" cy="145" r="11" fill="#F07A2A" opacity=".5"/><circle cx="175" cy="145" r="9" fill="#F07A2A" opacity=".5"/><circle cx="25" cy="175" r="7" fill="#F07A2A" opacity=".5"/><circle cx="55" cy="175" r="5" fill="#F07A2A" opacity=".5"/><circle cx="85" cy="175" r="12" fill="#F07A2A" opacity=".5"/><circle cx="115" cy="175" r="10" fill="#F07A2A" opacity=".5"/><circle cx="145" cy="175" r="8" fill="#F07A2A" opacity=".5"/><circle cx="175" cy="175" r="6" fill="#F07A2A" opacity=".5"/></svg>
-<div class="pill"><span>★ 4.8</span> from 462 Google reviews</div>
-<h1>The Bubble Bath</h1><p class="tag">Happy pets, happy humans</p><p class="blurb">Gentle grooming and everything your pet needs, from people who genuinely love animals.</p>
-<div class="ctas"><a class="btn p" href="https://wa.me/919972500708">Book on WhatsApp</a><a class="btn s" href="https://maps.google.com/?cid=15296306300709793342">Get directions</a></div></header>
-<section><h2>What we do</h2><div class="grid"><div class="svc"><h3>Grooming</h3><p>Bath, trim, nails and ears</p></div><div class="svc"><h3>Spa &amp; styling</h3><p>Breed cuts and pampering</p></div><div class="svc"><h3>Food &amp; supplies</h3><p>Trusted brands, always in stock</p></div><div class="svc"><h3>Book a slot</h3><p>WhatsApp us for the next opening</p></div></div></section>
-<section><h2>Why people keep coming back</h2><div class="revs"><figure class="rev"><div class="stars">★★★★★</div><blockquote>“This grooming shop is very good. Especially the main groomer and others. They have done full grooming of my shitzu perfectly and i could experience the hand touch of an experienced groomer on the work. Finally I found a…”</blockquote><figcaption>— Nandu, Google review</figcaption></figure><figure class="rev"><div class="stars">★★★★★</div><blockquote>“Had visited The Bubble Bath on 19/10/24 for our handsome Broly (Husky) for a complete grooming session. It took a total process time of 2.30hrs and I really must say they did a wonderful job . Our Broly is really irritating…”</blockquote><figcaption>— Geetha, Google review</figcaption></figure><figure class="rev"><div class="stars">★★★★★</div><blockquote>“I recently took my baby to the bubble bath and I was most happier with the experience. The staff was not only professional but also genuinely caring towards my baby The grooming was done with great attention to detail,my pet…”</blockquote><figcaption>— Keziya, Google review</figcaption></figure></div></section>
-<section><div class="two"><div class="box"><h2>Hours</h2><table><tr><td>Monday</td><td>Closed</td></tr><tr><td>Tuesday</td><td>9 AM–8:30 PM</td></tr><tr><td>Wednesday</td><td>9 AM–8:30 PM</td></tr><tr><td>Thursday</td><td>9 AM–8:30 PM</td></tr><tr><td>Friday</td><td>9 AM–8:30 PM</td></tr><tr><td>Saturday</td><td>9 AM–8:30 PM</td></tr><tr><td>Sunday</td><td>9 AM–8:30 PM</td></tr></table></div>
-<div class="box"><h2>Visit us</h2><p class="big">★ 4.8</p><p style="margin:6px 0 16px;color:var(--muted)">462 reviews on Google</p><p>002, Max Sunflower, Balaji Eternal Bliss Block-A, 1235, Whitefield Main Rd, near Hope Forum Circle, Maithri Layout, Whitefield, Bengaluru, Karnataka 560066, India</p><p style="margin-top:10px"><a href="tel:+91 99725 00708" style="color:var(--accent);font-weight:700">+91 99725 00708</a></p>
-<div class="ctas"><a class="btn p" href="https://maps.google.com/?cid=15296306300709793342">Open in Google Maps</a></div></div></div></section>
-<footer>© The Bubble Bath · Bengaluru</footer></div>
-<a class="float" href="https://wa.me/919972500708">WhatsApp us</a></body></html>
+<div class="preview">Preview designed for The Bubble Bath · photos are placeholders</div>
+<nav class="bar" id="bar"><b>The Bubble Bath</b><a href="tel:+91 99725 00708">Call</a></nav>
+<header class="hero"><div class="in">
+<div class="chips"><span class="chip">★ 4.8 · 462 Google reviews</span><span class="chip"><i class="dot" id="dot"></i><span id="open">Open today</span></span></div>
+<h1>The Bubble Bath</h1><p class="tag">Happy pets, happy humans</p>
+<div class="ctas"><a class="btn p" href="https://wa.me/919972500708"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>Book on WhatsApp</a>
+<a class="btn g" href="https://maps.google.com/?cid=15296306300709793342">Get directions</a></div></div></header>
+<div class="stats"><div><b>4.8★</b><span>Google rating</span></div><div><b data-count="462">462</b><span>Happy reviews</span></div><div><b id="close">—</b><span id="closeL">Open till</span></div></div>
+<main class="wrap">
+<section><p class="eyebrow">What we do</p><h2>Happy pets, happy humans</h2><p class="lead">Gentle grooming and everything your pet needs, from people who genuinely love animals.</p><div class="svcs"><div class="svc reveal"><span class="n">01</span><h3>Grooming</h3><p>Bath, trim, nails and ears</p></div><div class="svc reveal"><span class="n">02</span><h3>Spa &amp; styling</h3><p>Breed cuts and pampering</p></div><div class="svc reveal"><span class="n">03</span><h3>Food &amp; supplies</h3><p>Trusted brands, always in stock</p></div><div class="svc reveal"><span class="n">04</span><h3>Book a slot</h3><p>WhatsApp us for the next opening</p></div></div></section>
+<section><p class="eyebrow">Inside The Bubble Bath</p><h2>Come see for yourself</h2><div class="gal reveal"><img src="https://images.unsplash.com/photo-1611173622933-91942d394b04?auto=format&fit=crop&w=900&q=70" alt="" loading="lazy"><img src="https://images.unsplash.com/photo-1527526029430-319f10814151?auto=format&fit=crop&w=900&q=70" alt="" loading="lazy"><img src="https://images.unsplash.com/photo-1625321150203-cea4bee44b54?auto=format&fit=crop&w=900&q=70" alt="" loading="lazy"></div><p class="note">Placeholder photos. Your own photos go here.</p></section>
+<section><p class="eyebrow">462 reviews and counting</p><h2>What people say</h2><div class="revs"><figure class="rev"><div class="who"><span class="av">N</span><div><b>Nandu</b><small>★★★★★ · Google</small></div></div><blockquote>This grooming shop is very good. Especially the main groomer and others. They have done full grooming of my shitzu perfectly and i could experience the hand touch of an experienced groomer on the work. Finally I found a…</blockquote></figure><figure class="rev"><div class="who"><span class="av">G</span><div><b>Geetha</b><small>★★★★★ · Google</small></div></div><blockquote>Had visited The Bubble Bath on 19/10/24 for our handsome Broly (Husky) for a complete grooming session. It took a total process time of 2.30hrs and I really must say they did a wonderful job . Our Broly is really irritating…</blockquote></figure><figure class="rev"><div class="who"><span class="av">K</span><div><b>Keziya</b><small>★★★★★ · Google</small></div></div><blockquote>I recently took my baby to the bubble bath and I was most happier with the experience. The staff was not only professional but also genuinely caring towards my baby The grooming was done with great attention to detail,my pet…</blockquote></figure><figure class="rev"><div class="who"><span class="av">A</span><div><b>Aruna</b><small>★★★★★ · Google</small></div></div><blockquote>We just adopted a senior Shih Tzu who was severely matted. The team here treated him with such kindness and took their time to make sure he was comfortable. He looks like a brand-new dog! They even gave me some great tips on…</blockquote></figure></div></section>
+<section><p class="eyebrow">Visit</p><h2>Find us in Bengaluru</h2><div class="visit">
+<div class="box reveal"><table><tr data-d="Monday"><td>Monday</td><td>Closed</td></tr><tr data-d="Tuesday"><td>Tuesday</td><td>9 AM–8:30 PM</td></tr><tr data-d="Wednesday"><td>Wednesday</td><td>9 AM–8:30 PM</td></tr><tr data-d="Thursday"><td>Thursday</td><td>9 AM–8:30 PM</td></tr><tr data-d="Friday"><td>Friday</td><td>9 AM–8:30 PM</td></tr><tr data-d="Saturday"><td>Saturday</td><td>9 AM–8:30 PM</td></tr><tr data-d="Sunday"><td>Sunday</td><td>9 AM–8:30 PM</td></tr></table></div>
+<div class="box reveal"><p>002, Max Sunflower, Balaji Eternal Bliss Block-A, 1235, Whitefield Main Rd, near Hope Forum Circle, Maithri Layout, Whitefield, Bengaluru, Karnataka 560066, India</p><iframe class="map" loading="lazy" src="https://maps.google.com/maps?q=12.9836972,77.75417039999999&z=16&output=embed" title="Map"></iframe><div class="ctas"><a class="btn p" href="https://maps.google.com/?cid=15296306300709793342">Open in Google Maps</a><a class="btn" style="border:1.5px solid var(--ink)" href="tel:+91 99725 00708">+91 99725 00708</a></div></div></div></section>
+<div class="final reveal"><h2>Ready when you are</h2><p style="margin-bottom:22px;opacity:.9">Message us on WhatsApp and we'll get you booked in.</p><a class="btn" href="https://wa.me/919972500708">Chat on WhatsApp</a></div>
+</main>
+<footer>© The Bubble Bath · Bengaluru</footer>
+<div class="sticky"><a class="c" href="tel:+91 99725 00708">Call</a><a class="w" href="https://wa.me/919972500708">WhatsApp us</a></div>
+<script>
+document.documentElement.classList.add('js');
+const H={"Friday": "9\u202fAM\u20138:30\u202fPM", "Saturday": "9\u202fAM\u20138:30\u202fPM", "Sunday": "9\u202fAM\u20138:30\u202fPM", "Monday": "Closed", "Tuesday": "9\u202fAM\u20138:30\u202fPM", "Wednesday": "9\u202fAM\u20138:30\u202fPM", "Thursday": "9\u202fAM\u20138:30\u202fPM"};const D=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const now=new Date(Date.now()+(330+new Date().getTimezoneOffset())*60000);const today=D[now.getDay()];const h=H[today]||"";
+document.querySelectorAll('tr[data-d]').forEach(r=>{if(r.dataset.d===today)r.classList.add('today')});
+const pm=s=>{const m=s.trim().match(/(\d+)(?::(\d+))?\s*(AM|PM)?/i);if(!m)return null;let x=+m[1]%12+(+(m[2]||0))/60;if(/pm/i.test(m[3]||''))x+=12;return x};
+const parts=h.split(/[–-]/);const t=now.getHours()+now.getMinutes()/60;let open=false,closeTxt="—";
+if(/24 hours/i.test(h)){open=true;closeTxt="24h"}else if(parts.length===2){let a=pm(parts[0]),b=pm(parts[1]);if(a!==null&&b!==null){if(b<=a)b+=24;open=t>=a&&t<b;closeTxt=parts[1].trim().replace(':00','')}}
+if(/closed/i.test(h)){closeTxt="Closed";document.getElementById('closeL').textContent="Today"}
+document.getElementById('close').textContent=closeTxt;document.getElementById('open').textContent=open?'Open now':(/closed/i.test(h)?'Closed today':'Closed now');
+if(!open)document.getElementById('dot').classList.add('off');
+const bar=document.getElementById('bar');addEventListener('scroll',()=>bar.classList.toggle('solid',scrollY>window.innerHeight*.6),{passive:true});
+if('IntersectionObserver'in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');io.observe(el)}})}
+</script></body></html>
